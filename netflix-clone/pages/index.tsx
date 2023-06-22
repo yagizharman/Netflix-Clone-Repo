@@ -1,7 +1,8 @@
+import Billboard from "@/components/Bilboard";
 import Navbar from "@/components/Navbar";
 import useCurrentUser from "@/hooks/useCurrentUser";
-import { NextPageContext } from "next"
-import { getSession, signOut } from "next-auth/react"
+import { NextPageContext } from "next";
+import { getSession, signOut } from "next-auth/react";
 
 export async function getServerSideProps(context: NextPageContext) {
   const session = await getSession(context);
@@ -9,23 +10,23 @@ export async function getServerSideProps(context: NextPageContext) {
   if (!session) {
     return {
       redirect: {
-        destination: '/auth',
-        permanent:false,
-      }
-    }
+        destination: "/auth",
+        permanent: false,
+      },
+    };
   }
   return {
-    props:{}
-  }
+    props: {},
+  };
 }
 
 export default function Home() {
-  const {data:user } = useCurrentUser();
-
+  const { data: user } = useCurrentUser();
 
   return (
     <>
-    <Navbar/>
+      <Navbar />
+      <Billboard />
     </>
-  )
+  );
 }
