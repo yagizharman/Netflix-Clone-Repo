@@ -2,7 +2,7 @@
 
 
 This is a repository i created while building a FullStack Netflix Clone using React, NextJS, TailwindCSS & Prisma.
-Available in :https://netflix-clone-repo-ms0h6jioc-yagizharman.vercel.app/
+Available in : https://netflix-clone-repo-chmdygfye-yagizharman.vercel.app/auth
 
 
 https://github.com/yagizharman/Netflix-Clone-Repo/assets/73850593/c03ec9eb-d618-4768-acd7-f1101336ff64
